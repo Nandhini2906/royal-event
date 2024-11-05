@@ -1,0 +1,1193 @@
+<html>
+<head>
+  <link rel="icon" href="image/logo.webp">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>catering website</title></head>
+<style>
+
+nav ul
+{
+  font-family:'Times New Roman', Times, serif;
+ list-style: none;
+height: 55px;
+margin: 0px;
+overflow: hidden;
+background:rgb(238, 237, 237);
+text-align: center;
+margin: 20px;
+}
+
+nav li 
+{
+  display:inline-block;
+
+}
+
+nav li a
+{
+display: block;
+padding: 14px;
+color: rgb(107, 122, 110);
+text-decoration: none;
+}
+
+.dropdown-content
+{
+display: none;
+position: absolute;
+background-color: rgb(245, 168, 81);
+width: 150px;
+}
+.dropdown-content a:hover
+{
+background-color: rgb(168, 106, 35);
+}
+.dropdown:hover .dropdown-content
+{
+display: block;
+}
+
+.logobox
+{
+  margin-top: -10px;
+  height: 25vh;
+  width: 100%;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.logo
+{ 
+ 
+  margin: 10px;
+  border-radius: 50%;
+  width: 250px;
+  height: 110px;
+  display: flex;
+}
+
+
+.headbox{
+  /* border: 20px solid black; */
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+}
+.wrapper {
+  position: absolute;
+  width: 98%;
+  height: 180%;
+  overflow: hidden;
+}
+
+figure {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  opacity: 0;
+
+  animation: slideshow 20s linear infinite 0s;
+  -o-animation: slideshow 20s linear infinite 0s;
+  -moz-animation: slideshow 20s linear infinite 0s;
+  -webkit-animation: slideshow 20s linear infinite 0s;
+}
+.headpic {
+  opacity: 1;
+  background: url("image/slide1-1.jpg") no-repeat center center;
+  /* -webkit-background-clip: cover; */
+  -moz-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  
+}
+
+.headpic-1 {
+  background: url("image/slide2-1.jpg") no-repeat center center;
+  /* -webkit-background-clip: cover; */
+  -moz-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  animation-delay: 5s;
+  -o-animation-delay: 5s;
+  -moz-animation-delay: 5s;
+  -webkit-animation-delay: 5s;
+}
+
+.headpic-2 {
+  background: url("image/slide3-1.jpg") no-repeat center center;
+  /* -webkit-background-clip: cover; */
+  -moz-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  animation-delay: 10s;
+  -o-animation-delay: 10s;
+  -moz-animation-delay: 10s;
+  -webkit-animation-delay: 10s;
+}
+
+.headpic-3 {
+  background: url("image/slide4.jpg") no-repeat center center;
+  /* -webkit-background-clip: cover; */
+  -moz-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  animation-delay: 15s;
+  -o-animation-delay: 15s;
+  -moz-animation-delay: 15s;
+  -webkit-animation-delay: 15s;
+}
+
+
+@keyframes slideshow {
+  0% {
+      opacity: 0;
+      transform: scale(1);
+      -ms-transform: scale(1);
+  }
+
+  5% {
+      opacity: 1;
+  }
+
+  25% {
+      opacity: 1;
+  }
+
+  30% {
+      opacity: 0;
+      transform: scale(1.1);
+      -ms-transform: scale(1.1);
+  }
+
+  90% {
+      opacity: 0;
+      transform: scale(1);
+      -ms-transform: scale(1);
+
+  }
+}
+
+.text
+{
+  color: white;
+  font-size: 40px;
+  position: absolute;
+}
+
+
+.phone
+{
+  margin-top: 30px;
+  font-size: large;
+}
+
+button
+{
+  width: 10em;
+  height: 3em;
+  color: orange;
+}
+.img1
+{
+  margin-top: 50px;
+  height: 450px;
+  width: 330px;
+  filter: grayscale(70%);
+  /* opacity: 80%; */
+  object-fit: cover;
+  transition: 2s ease;
+
+}
+.img1:hover
+{
+
+  filter:grayscale(0%);
+  transition: scale(1.4);
+  filter: brightness(100%);
+  
+}
+
+.img2
+{
+  margin-top: 100px;
+  margin-right:25px ;
+  margin-left:25px ;
+  width: 96.2%;
+  height: 80vh;
+  filter: grayscale(50%);
+  /* opacity: 95%; */
+  object-fit: cover;
+  overflow: hidden;
+}
+.about
+{
+  position: absolute;
+  margin-inline-start: 46%;
+  margin-top: -33%;
+  color: white;
+}
+
+.about1
+{
+  position: absolute;
+  margin-inline-start: 43%;
+  margin-top: -30%;
+  text-align: center;
+  /* color: white; */
+  font-family:'Times New Roman', Times, serif;
+}
+.box
+{
+  margin-right:25px ;
+  margin-left:25px ;
+  background-color: rgb(243, 241, 241);
+  height: 198vh;
+}
+
+.l2box
+{
+  margin-right:25px ;
+  margin-left:25px ;
+  background-color: rgb(243, 241, 241);
+  height: 214vh;
+}
+.box1
+{
+  margin-left: 12%;
+  background-color: rgb(231, 164, 126);
+  background-image: url("image/slide2.avif");
+  background-size:cover;
+  background-position: center;
+  width: 37%;
+  height: 100vh;
+}
+.box2
+{
+  margin-right: 12%;
+  float: right;
+  background-color: white;
+  width: 38%;
+  height: 100vh;
+}
+.define
+{
+  padding: 70px;
+  /* text-align: center; */
+  text-align: justify;
+}
+.mbox
+{ 
+  background-color: rgb(249, 252, 249);
+  width: 20%;
+  height: 48vh;
+}
+.sbox
+{
+  height:80vh ;
+  width: 6%;
+  background-color:white;
+  color: #d9ddda;
+}
+.sbox:hover
+{
+  color: rgb(245, 135, 94);
+}
+.box3
+{
+  width: 30%;
+  height: 80vh;
+  background-color:white;
+  color: #8c918d;
+  word-spacing: 1px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.img3
+{
+  margin-top: 100px;
+  margin-right:25px ;
+  margin-left:25px ;
+  width: 96%;
+  height: 90vh;
+  object-fit: cover;
+
+}
+
+
+.small
+{
+  text-align: center;
+  color: #707471;
+}
+.small:hover
+{
+  color: black;
+}
+.letter
+{
+  text-align: center;
+  color: black;
+  font-size:x-large;
+}
+.letter:hover
+{
+  color: rgb(236, 116, 72);
+}
+
+.bx
+{ 
+  position: relative;
+  width: 285px;
+  height: 26vh;
+  background-color:rgb(182, 115, 115); 
+}
+.pic
+{
+  height: 26vh;
+  width: 285px;
+}
+
+.pic1
+{
+  margin-top: 100px;
+  margin-right:25px ;
+  margin-left:25px ;
+  width: 96.2%;
+  height: 80vh;
+  object-fit: cover;
+  overflow: hidden;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    /* background-color: red; */
+    color: #000000;
+
+  }
+  .bx:hover .overlay {
+    opacity: 1;
+  }
+  .icon {
+    color: rgb(114, 110, 110);
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #fcfafa;
+    padding: 10px;
+    border-radius: 50%;
+
+  }
+  .fa-user:hover {
+    color: #eee;
+  }
+ 
+  .bx:hover
+  {
+    filter: grayscale(40%);
+    color: rgb(225,225,225,.1);
+  }
+
+.box22
+{
+  margin-left: 11%;
+  /* background-color: rgb(231, 164, 126); */
+  background-image: url("image/chef.jpg");
+  background-size:cover;
+  background-position: center;
+  width: 37%;
+  height: 100vh;
+}
+
+.bx1
+{
+  position: relative;
+  height: 40vh;
+  width: 220px;
+  background-color:rgb(243, 241, 241);
+  padding: 20px;
+  text-align: center;
+}
+.round
+{
+  display: block;
+  border-radius: 50%;
+  width: 105%;
+  height: 90%;
+}
+.icon1 {
+    color:aliceblue;
+    font-size: 20px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #fd4a03;
+    padding: 10px;
+    border-radius: 50%;
+}
+ 
+  .bx1:hover
+  {
+    filter: grayscale(40%);
+  }
+
+  .bx1:hover .overlay {
+    opacity: 1;
+  } 
+
+.bx2
+{
+  position: relative;
+  width: 390px;
+  height:36vh;
+  background-color: white;
+  padding: 15px;
+  text-align: center;
+}  
+
+.bx3
+{
+  position: relative;
+  width: 390px;
+  height:77vh;
+  background-color: white;
+  padding: 15px;
+  text-align: center;
+}  
+
+.lastimg
+{
+  height: 36vh;
+  width: 390px;
+  /* filter: brightness(100%); */
+}  
+.lastimg1
+{
+  width: 390px;
+  height: 490px;
+  filter: brightness(100%);
+}
+.icon2{
+    color:rgb(108, 110, 108);
+    font-size: 20px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 50%;
+}
+.bx3:hover .overlay {
+    opacity: 1;
+  }
+  .bx2:hover .overlay {
+    opacity: 1;
+  }
+
+  .bx2:hover
+{
+  filter: grayscale(45%);
+}
+
+.bx3:hover
+{
+  filter: grayscale(40%);
+}
+
+.lastbox
+{
+  margin-right:25px ;
+  margin-left:25px ;
+  margin-top: 130px;
+  background-color: rgb(243, 241, 241);
+  height: 160vh;
+}
+input::placeholder{
+  position: absolute;
+  top: 15;
+  left: 0;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 15px;
+  padding: 10px;
+  /* transition: all 0.3s ease; */
+}
+.fa-bounce
+{
+  color: white;
+  font-size: 20px;
+  background-color: #8c918d;
+  border-radius: 50%;
+  padding: 10px;
+}
+#more {display: none;}
+#full {display: none;}
+#menu {display: none;}
+#menu1 {display: none;}
+#team {display: none;}
+#view {display: none;}
+
+
+.slideshow {
+  max-width: 900px;
+  height: 40vh;
+  margin: auto;
+  margin-top: 80px;
+  position: relative;
+  background-color: white;
+}
+.slide {
+  display: none;
+}
+.imgl
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 44%;
+    margin-top: -40px;
+}
+ 
+.textl
+{
+  color:#a4a7a5;
+  font-size: 20px;
+  /* word-spacing: 3px; */
+}
+
+</style>
+      
+<body>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <nav><ul><b>
+        <i class="fas fa-home"></i>
+         <li class="dropdown"><a href="#" target="    ">ABOUT US</a>
+        <div class="dropdown-content">
+        <a href="#">Style 1</a>
+        <a href="#">Style 2</a>
+        </div></li>
+
+        <li class="dropdown"><a href="#">PAGES</a>
+          <div class="dropdown-content">
+            <a href="#">FEATURES</a>
+            <a href="#">STORE</a>
+            <a href="#">APPOINMENT</a>
+            <a href="#">GALLERY</a> 
+            </div></li>  
+
+         <li><a href="#">MENU</a></li>
+         <li><a href="#">SERVICES</a></li>
+         <li><a href="#">BLOG</a></li>
+         <li><a href="#">CONTENTS</a></li>
+        </ul></nav>
+     <br><br>
+    <div class="logobox">
+     <div class="phone">
+      <i class="fa fa-phone" style="color:rgb(84, 105, 84);"></i>
+      <a href="tel:+91 875496172"  style="color:rgb(60, 78, 60); text-decoration:none;" >123-4567-890</a>
+     <p style="color: rgb(84, 105, 84);">info@yoursite.com</p></div>
+    <img class="logo" src="image/logo.webp" style="color:rgb(84, 105, 84);margin-top: -10px;">
+    <div class="phone">
+     <i class="fa-solid fa-cart-shopping" style="color:rgb(84, 105, 84)"></i>
+      <a href="#" style="color:rgb(84, 105, 84); text-decoration: none;">YOUR CARD ;</a>
+     <P style="color: #fa7d4c;">0 Items $0.00</P>
+    </div></div>
+         
+      <div class="headbox" style="margin-top: -30px;">
+        <!-- <div class="content-box"> -->
+            
+                <div class="wrapper">
+                    <figure class="headpic">
+                      <hr style="border-top: 1px solid rgb(248, 250, 248); width: 100px;position: absolute;margin-left: 595px; margin-top: 200px;">
+                    <h3 class="text" style="margin-inline-start: 450px;margin-top: 250px;"> A PERFECT BLEND OF <br>SENSATIONAL FOOD
+                      <hr style="border-top: 1px solid rgb(248, 250, 248); width: 100px;position: absolute;margin-left: 150px; margin-top: 50px;"><br>
+                     <button style="margin-top: 100px;margin-left: 140px;">ORDER SERVICE</button></h3>
+                    </figure>
+    
+                    <figure class="headpic-1">
+                      <hr style="border-top: 1px solid rgb(248, 250, 248); width: 100px;position: absolute;margin-left: 600px; margin-top: 200px;">
+                      <h3 class="text" style="margin-inline-start: 450px;margin-top: 250px;"> CUSTAMIZED MENU  <br>COMPETITIVE RATES
+                        <hr style="border-top: 1px solid rgb(248, 250, 248); width: 100px;position: absolute;margin-left: 150px; margin-top: 50px;"><br>
+                        <button style="margin-top: 100px;margin-left: 140px;">ORDER SERVICE</button></h3>
+                    </figure>
+    
+                    <figure class="headpic-2">
+                      <hr style="border-top: 1px solid rgb(248, 250, 248); width: 100px;position: absolute;margin-left: 600px; margin-top: 200px;">
+                      <h3 class="text" style="margin-inline-start: 450px;margin-top: 250px;"> MARKET LEADERS IN <br>CATERING EXCELLENCE
+                        <hr style="border-top: 1px solid rgb(248, 250, 248); width: 100px;position: absolute;margin-left: 150px; margin-top: 50px;"><br>
+                        <button style="margin-top: 100px;margin-left: 140px;">ORDER SERVICE</button></h3>
+                    </figure>
+    
+                    <figure class="headpic-3">
+                      <hr style="border-top: 1px solid rgb(248, 250, 248); width: 100px;position: absolute;margin-left: 600px; margin-top: 200px;">
+                      <h3 class="text" style="margin-inline-start: 450px;margin-top: 250px;"> INSPIRING IDEAS AND <br>PROFESSONAL STAFE
+                        <hr style="border-top: 1px solid rgb(248, 250, 248); width: 100px;position: absolute;margin-left: 150px; margin-top: 50px;"><br>
+                        <button style="margin-top: 100px;margin-left: 140px;">ORDER SERVICE</button></h3>                 
+                    </figure>
+                </div>
+            </div> 
+        </div>
+
+
+    <div style="padding: 70px; text-align: center;font-size: 15px; color:rgb(86, 100, 86) ;"><b>CATERING</div>
+  <div style="text-align: center; font-size: 30px; margin-top: -30px; color: rgb(39, 39, 39);"><b>WELCOME TO THE BEST<br>CATERING COMPANY<br></div><br>
+  <hr style="border-top: 2px solid rgb(90, 100, 90); width: 100px;">
+    
+  <img style="margin-left: 150px;" class="img1" src="image/f.jpg" >
+   <img style="margin-left: 25px;" class="img1" src="image/foo.avif">
+  <img style="margin-left: 25px;" class="img1" src="image/susi.avif">
+
+
+   <img class="img2" src="image/service-5.jpg"/>
+    <div class="about" style="font-size:19px;"><b>ABOUT US</div>
+    <div class="about1" style="font-size:25px; "><b>OUR STORY OF<br>SUCCESS<br><br>
+   <hr style="border-top: 2px solid white; width: 120px;"></div>
+
+  <div class="box" >
+   <div class="box1" style="position: absolute; margin-top: -18.1%;"></div>
+    <div class="box2" style="margin-top: -19%; position: relative;">
+     <div class="define" style="font-size: 24px; color: rgb(121, 133, 121);"><b>A Perfect Blend of Sensational Food, Inspiring Ideas and Professional Staff
+    <h6 style="color: #545e56; word-spacing: 8px;"> <b style="color: black; font-size: xx-large;">1997</b> - Silver service is oriented for a right-handed waiter. Thus to serve the food, the waiter stands behind the guest and to the guest’s left, holds or supports the platter with their left hand, and serves the food with their right hand<span id="dots">...</span><span id="more"> It is common for the waiter to hold the serving-fork above the serving-spoon both in the right hand, and use the fingers to manipulate the two as a pincer for picking up and transferring the food.We let our food speak for itself but our customers still have a lot to say. If you’re considering working with us for your next company event, corporate breakfast, lunch or personal party at your home, browse through these testimonials to see how others feel about their experience with us.</span></h6>
+   <button onclick="myFunction()" id="myBtn" style="width: 15em; height: 8vh; margin-left: 20px;background-color: rgb(245, 143, 102);color: white;border: none;"><b>READ FULL STORY</button>
+  </div></div><br><br>
+
+  <div style="padding: 420px;font-size: 15px; color:rgb(86, 100, 86) ;margin-inline-start: 14%;"><b>CATERING</div><br>
+    <div style="text-align: center; font-size: 30px; color: rgb(42, 43, 42); margin-top: -33%;"><b>OUR MENU</div><br><br>
+  <hr style="border-top: 2px solid rgb(121, 133, 121); width: 100px;">
+
+
+  <div style="display: flex; margin-top:40px; margin-left: 110px;">
+   <div class="mbox" style="margin: 15px;">
+   <img style="width:88%; height: 30vh; border: 14px solid white;" src="image/prawn.jpg">
+  <h4 style="text-align: center; color: rgb(121, 133, 121);">CANAPES</h4></div>
+
+  <div class="mbox" style="margin: 15px;">
+   <img style="width:88%; height: 30vh; border: 14px solid white;" src="image/sp.jpg">
+  <h4 style="text-align: center; color: rgb(121, 133, 121);">SMALL PLATES</h4> </div>
+
+  <div class="mbox" style="margin: 15px;">
+   <img style="width:88%; height: 30vh; border: 14px solid white;" src="image/sweet.jpg">
+  <h4 style="text-align: center; color: rgb(121, 133, 121);">SWEETS</h4></div>
+
+  <div class="mbox" style="margin: 15px;">
+   <img style="width:88%; height: 30vh; border: 14px solid white;" src="image/drink.jpg">
+  <h4 style="text-align: center; color: rgb(121, 133, 121);">DRINKS</h4></div>
+  </div>
+  
+  <span id="dots"> </span><span id="menu">
+  <div class="box"  style="height: 70vh; margin-left: 0px; margin-right: 0;">
+
+    <div style="display: flex; margin-left: 110px;">
+      <div class="mbox" style="margin: 15px;">
+      <img style="width:88%; height: 30vh; border: 14px solid white;" src="image/prawn1.jpg">
+     <h4 style="text-align: center; color: rgb(121, 133, 121);">PRAWNS</h4></div>
+   
+     <div class="mbox" style="margin: 15px;">
+      <img style="width:88%; height: 30vh; border: 14px solid white;" src="image/service-1.jpg">
+     <h4 style="text-align: center; color: rgb(121, 133, 121);">SHORTS</h4> </div>
+   
+     <div class="mbox" style="margin: 15px;">
+      <img style="width:88%; height: 30vh; border: 14px solid white;" src="image/chat.jpg">
+     <h4 style="text-align: center; color: rgb(121, 133, 121);">CHATS</h4></div>
+   
+     <div class="mbox" style="margin: 15px;">
+      <img style="width:88%; height: 30vh; border: 14px solid white;" src="image/cool.avif">
+     <h4 style="text-align: center; color: rgb(121, 133, 121);">COOL DRINKS</h4></div>
+     </div>
+
+
+   <h3 style="text-align: center; color: rgb(121, 133, 121); font-size: 20px;"><b>and much more sensational food & drinks</b><br></div></span></h3>
+   <button onclick="moremenu()" id="myBtn" style="width: 16em; height: 9vh; margin-left: 20px;background-color: rgb(245, 143, 102);color: white;border: none; margin-left: 42%;"><b>VIEW FULL MENU</button>
+  </div> 
+
+<div style="padding:60px"></div>
+
+<div style="margin-top: 100px;font-size: 15px; color:rgb(86, 100, 86); text-align:center;"><b>SERVICES</div><br>
+<div style="text-align: center; font-size: 35px; color: rgb(63, 65, 63);"><b>Planning a Fabulous<br> Event?</div><br>
+  <hr style="border-top: 2px solid rgb(108, 110, 108); width: 110px;">
+
+  <img style="margin-inline-start: 40%; margin-top: 15%; border-radius: 50%; height: 250px; width: 250px;" src="image/round.jpg"></img>
+
+   <div class="box3" style="margin-top: -25%; margin-left: 38px;">
+   <h4 style="margin-left: 310px;color: #545e56;">WEDDINGS
+   <hr style="border-top: 2px solid rgb(108, 110, 108); width: 90px;"></h4>
+   <h5 style="margin-left: 140px; font-weight: lighter;">On one of the most important days of<br> your life, we provide a full catering<br> program
+  </h5><br>
+    <h4 style="margin-left: 300px;color: #545e56;">CORPARATE
+      <hr style="border-top: 2px solid rgb(108, 110, 108); width: 90px;"></h4>
+      <h5 style="margin-left: 180px;font-weight: lighter;">You can order a corporate full time or part-time service for personnel/staff lunches
+   </h5><br>
+   <h4 style="margin-left: 310px;color: #545e56;">SOCIALS
+    <hr style="border-top: 2px solid rgb(108, 110, 108); width: 90px;"></h4>
+    <h5 style="margin-left: 180px;font-weight: lighter;">Social events are highly important to our clients, and we guarantee perfect service
+ </h5></div>
+
+
+<div class="sbox" style="margin-left: 450px; margin-top: -40.3%;">
+ <h1 style="text-align: center;">01</h1><br>
+  <h1 style="text-align: center; padding-top: 87px;">03</h1><br>
+ <h1 style="text-align: center; padding-top: 87px;">05</h1>
+</div>
+
+<div class="sbox" style="margin-left:800px; margin-top:-40.3%;">
+  <h1 style="text-align: center;">02</h1><br>
+  <h1 style="text-align: center; padding-top: 87px;">04</h1><br>
+  <h1 style="text-align: center; padding-top: 87px;">06</h1>
+</div>
+
+<div class="box3" style="margin-left:880px;margin-top:-40.2%;">
+ <h4 style="color: #545e56;">PICNICS
+  <hr style="border-top: 2px solid rgb(108, 110, 108); width: 80px;margin-left: 1px;"></h4>
+  <h5 style="margin-right: 150px;font-weight: lighter;">We will be more than happy to work for you during a family or a business picnic</h5><br>
+<br>
+<h4 style="color: #545e56;">FESTIVELS
+  <hr style="border-top: 2px solid rgb(108, 110, 108); width: 90px;margin-left: 1px;"></h4>
+  <h5 style="margin-right: 150px;font-weight: lighter;">We are completely capable of serving for big, open, small, adults or kids festivals</h5>
+<br>
+  <h4 style="color: #545e56;">PRIVATE PARTIES
+      <hr style="border-top: 2px solid rgb(108, 110, 108); width: 90px;margin-left: 1px;"></h4>
+      <h5 style="margin-right: 150px;font-weight: lighter;">We will be more than happy to work for you during a family or a business picnic</h5></h5>
+</div>
+<!-- <button style="width: 18em; height: 10vh; margin-left: 20px;background-color: rgb(245, 143, 102);color: white;border: none; margin-left: 42%;"><b>VIEW MORE SERVICES</button> -->
+
+  <img class="img3" src="image/slide2-1.jpg"/>
+    <div class="about" style="font-size:14px;"><b>BOOK TODAY</div>
+    <div class="about1" style="font-size:49px;margin-left: 28%;color: aliceblue;"><b>Book Your Tasting Session<br>or Disscuss Your Project<br><br>
+   <hr style="border-top: 2px solid white; width: 120px;"><br>
+<!-- <button style="width: 18em; height: 10vh; margin-left: 20px;background-color: rgb(245, 143, 102);color: white;border: none;"><b>VIEW MORE SERVICES</button> -->
+</div>
+<div class="box" style="height: 110vh;">
+  <div style="font-size: 13px; color:rgb(86, 100, 86);text-align: center;padding-top: 100px;"><b>TESTIMANIALS</div><br>
+    <div style="text-align: center; font-size: 35px; color: rgb(62, 63, 62);"><b>Clints About Us</div><br>
+  <hr style="border-top: 2px solid rgb(121, 133, 121); width: 100px;">
+  
+  <div class="slideshow">
+    <div class="slide">
+      <img class="imgl" src="image/clint1.jpg" alt="Image 1">
+      <p class="textl" style="margin-left: 80px;margin-right: 80px;margin-top: 50px;">"We were glad to have you as our caterer on the special day such as our wedding! Thank you for your amazing work, we recommend your service to everyone"</p>
+  <br><b style="margin-left: 350px;color: #a4a7a5;">-Sarah and Thomas Adams,NC
+  
+    </div>
+    <div class="slide">
+        <img class="imgl" src="image/clint2.jpg" alt="Image 2">
+      <p class="textl"style="margin-left: 80px;margin-right: 80px;margin-top: 50px;">"The anniversary went just fine. The food and the catering staff were fantastic. We appreciate you being prompt and creative, God bless your company" </p>
+      <br><b style="margin-left: 350px;color: #a4a7a5;">-Nicole And Steven Martin,WV
+    </div>
+    <div class="slide">
+        <img class="imgl" src="image/clint3.jpg" alt="Image 3">
+      <p class="textl" style="margin-left: 80px;margin-right: 80px;margin-top: 50px;">"Our church was having a small charity event for children, and you guys made it perfect. The kids loved the food, and we are definitely calling you back"</p>
+      <br><b style="margin-left: 350px;color: #a4a7a5;">-Luara and Adams John,NY
+    </div>
+  </div>  
+  
+</div>
+
+<div style="font-size: 13px; color:rgb(86, 100, 86);text-align: center;padding-top: 100px;"><b>BLOG</div><br>
+  <div style="text-align: center; font-size: 35px; color: rgb(45, 46, 45);"><b>Recent Articles</div><br>
+    <hr style="border-top: 2px solid rgb(121, 133, 121); width: 100px;">
+
+
+    <div class="bx" style="margin-left: 200px;margin-top: 50px;">
+ <img class="pic" src="image/service-2.jpg">
+ <div class="overlay"><a href="#" class="icon" title="User Profile">
+  <i class="fa fa-chain"></i></a></div>
+  <h5 class="small">APRIL 24,2016</h5>
+ <h4 class="letter">We Can Help Find a Location that’s Right for You </h4></div>
+<hr style="border-top: 2px solid rgb(150, 155, 150); width: 100px; position: absolute; margin-top: 180px; margin-left: 290px;">
+
+<div class="bx" style="margin-left: 520px; margin-top: -167px;" >
+ <img class="pic" src="image/service-7.jpg">
+ <div class="overlay"><a href="#" class="icon" title="User Profile">
+  <i class="fa fa-chain"></i></a></div>
+  <h5 class="small">APRIL 14,2016</h5>
+ <h3 class="letter">Catering Services for Fabulous Corporate Events</h3></div>
+<hr style="border-top: 2px solid rgb(144, 148, 144); width: 100px; position: absolute; margin-top: 180px; margin-left: 610px;">
+
+
+<div class="bx" style="margin-left:840px; margin-top: -167px;" >
+ <img class="pic" src="image/service-6.jpg">
+ <div class="overlay"><a href="#" class="icon" title="User Profile">
+  <i class="fa fa-chain"></i></a></div>
+  <h5 class="small">APRIL 4,2016</h5>
+ <h3 class="letter">Planning a Wedding Menu Can Be Daunting</h3></div>
+<hr style="border-top: 2px solid rgb(147, 150, 147); width: 100px; margin-top: 180px;margin-left:940px ;"><br><br><br><br>
+
+<span id="dots">
+</span><span id="menu1">
+
+<div class="bx" style="margin-left: 360px;margin-top: 50px;">
+  <img class="pic" src="image/article1.avif">
+  <div class="overlay"><a href="#" class="icon" title="User Profile">
+   <i class="fa fa-chain"></i></a></div>
+   <h5 class="small">APRIL 2,2016</h5>
+  <h4 class="letter">Catering to the passionate is exactly what you shout do</h4></div>
+ <hr style="border-top: 2px solid rgb(150, 155, 150); width: 100px; position: absolute; margin-top: 180px; margin-left: 460px;">
+ 
+ 
+ <div class="bx" style="margin-left:690px; margin-top: -167px;" >
+  <img class="pic" src="image/article2.avif">
+  <div class="overlay"><a href="#" class="icon" title="User Profile">
+   <i class="fa fa-chain"></i></a></div>
+   <h5 class="small">APRIL 1,2016</h5>
+  <h3 class="letter">Their is no love sincerer then love of food</h3></div>
+ <hr style="border-top: 2px solid rgb(147, 150, 147); width: 100px; margin-top: 180px;margin-left:790px ;"><br><br><br><br></span>
+
+<button onclick="myFunction1()" id="myBtn" style="width: 15em; height: 9vh; margin-left: 20px;background-color: rgb(245, 143, 102);color: white;border: none; margin-left: 42%;"><b> VIEW ARTICLES</button>
+
+
+
+  <img class="pic1" src="image/slide3-1.jpg"/>
+  <div class="about" style="font-size:15px; margin-inline-start: 47%;"><b>ABOUT US</div>
+  <div class="about1" style="font-size:25px; color: white; "><b>OUR STORY OF<br>SUCCESS<br><br>
+ <hr style="border-top: 1px solid rgb(231, 228, 228); width: 100px;"></div>
+
+<div class="l2box" >
+ <div class="box22" style="position: absolute; margin-top: -18.1%;"></div>
+  <div class="box2" style="margin-top: -19%; position: relative;">
+   <!-- <div class="define" style="font-size: 24px; color: rgb(121, 133, 121);"><b>A Perfect Blend of Sensational Food, Inspiring Ideas and Professional Staff -->
+  <h5 style="color: #a4a7a5; padding: 80px;text-align: justify; line-height: 20px; font-family:unset;">  Silver service is oriented for a right-handed waiter. Thus to serve the food, the waiter stands behind the guest and to the guest’s left, holds or supports the platter with their left hand, and serves the food with their right hand. <span id="dots">...</span><span id="full">It is common for the waiter to hold the serving-fork above the serving-spoon both in the right hand, and use the fingers to manipulate the two as a pincer for picking up and transferring the food.We let our food speak for itself but our customers still have a lot to say. If you’re considering working with us for your next company event, corporate breakfast, lunch or personal party at your home, browse through these testimonials to see how others feel about their experience with us.</span></h5>
+ <hr style="border-top: 2px solid rgb(114, 113, 113); width: 100px;margin-top: -60px; margin-left: 80px;"><br>
+ <h5 style="color: #545e56;font-size: larger; margin-left: 80px;">Andreo Moreno,<b style="color: #a4a7a5;font-size: small;">Master-Chef</h5>
+ <button onclick="fullmenu()" id="myBtn" style="width: 15em; height: 9vh; margin-left: 80px;background-color: rgb(245, 143, 102);color: white;border: none;position: absolute;margin-top: 10px;"><b>READ FULL STORY</button>
+</div><br>
+
+<div style="font-size: 13px; color:rgb(86, 100, 86);position: absolute;margin-top: 440px;margin-left: 47%;"><b>STAFE</div><br><br>
+  <div style="text-align: center; font-size: 35px; color: rgb(45, 46, 45);position: absolute;margin-top: 440px;margin-left: 45%;"><b>Team</div><br>
+    <hr style="border-top: 2px solid rgb(121, 133, 121); width: 100px;position: absolute;margin-top: 500px;margin-left: 44.5%;">
+    
+    <div style="display: flex; margin-top: 600px;">
+
+      <div class="bx1" style="margin-left: 120px;">
+    <img class="round" src="image/1.jpg">
+    <div class="overlay">
+        <a href="#" class="icon1" title="User Profile" style="margin-left: -20px;">
+          <i class="fa-brands fa-x-twitter"></i>
+        <a href="#" class="icon1" title="User Profile" style="margin-left: 30px;">
+            <i class="fa-brands fa-facebook"></i></a></div>
+  <h2 class="small">Amanda Flinch</h2>
+  <h4 style="color: #a4a7a5;">Co-founder, Chef</h4>
+    </div>
+
+    <div class="bx1">
+    <img class="round" src="image/2.jpg">
+    <div class="overlay">
+      <a href="#" class="icon1" title="User Profile" style="margin-left: -20px;">
+        <i class="fa-brands fa-x-twitter"></i>
+      <a href="#" class="icon1" title="User Profile" style="margin-left: 30px;">
+          <i class="fa-brands fa-facebook"></i></a></div>
+  <h2 class="small">Amanda Flinch</h2>
+  <h4 style="color: #a4a7a5;">Chef</h4>
+   </div>
+
+    <div class="bx1">
+    <img class="round" src="image/3.jpg">
+    <div class="overlay">
+      <a href="#" class="icon1" title="User Profile" style="margin-left: -20px;">
+        <i class="fa-brands fa-x-twitter"></i>
+      <a href="#" class="icon1" title="User Profile" style="margin-left: 30px;">
+          <i class="fa-brands fa-facebook"></i></a></div>
+  <h2 class="small">Anthony Mann</h2>
+  <h4 style="color: #a4a7a5;">Caterer</h4>
+    </div>
+
+    <div class="bx1">
+    <img class="round" src="image/4.jpg">
+    <div class="overlay">
+      <a href="#" class="icon1" title="User Profile" style="margin-left: -20px;">
+        <i class="fa-brands fa-x-twitter"></i>
+      <a href="#" class="icon1" title="User Profile" style="margin-left: 30px;">
+          <i class="fa-brands fa-facebook"></i></a></div>
+  <h2 class="small">Jenny Green</h2>
+  <h4 style="color: #a4a7a5;">Caterer</h4>
+    </div></div>
+  
+    <span id="dots"></span><span id="team">
+    <div style="display: flex; margin-top: 30px;margin-left: 140px;">
+
+    <div class="bx1" style="margin-left: 120px;">
+      <img class="round" src="image/chef2.jpg">
+      <div class="overlay">
+          <a href="#" class="icon1" title="User Profile" style="margin-left: -20px;">
+            <i class="fa-brands fa-x-twitter"></i>
+          <a href="#" class="icon1" title="User Profile" style="margin-left: 30px;">
+              <i class="fa-brands fa-facebook"></i></a></div>
+    <h2 class="small">Alain Ducasse</h2>
+    <h4 style="color: #a4a7a5;">Co-founder, Chef</h4>
+      </div>
+  
+      <div class="bx1">
+      <img class="round" src="image/ch1.jpg">
+      <div class="overlay">
+        <a href="#" class="icon1" title="User Profile" style="margin-left: -20px;">
+          <i class="fa-brands fa-x-twitter"></i>
+        <a href="#" class="icon1" title="User Profile" style="margin-left: 30px;">
+            <i class="fa-brands fa-facebook"></i></a></div>
+    <h2 class="small">Gordon Ramsay</h2>
+    <h4 style="color: #a4a7a5;">Chef</h4>
+     </div>
+  
+      <div class="bx1">
+      <img class="round" src="image/chef3.jpg">
+      <div class="overlay">
+        <a href="#" class="icon1" title="User Profile" style="margin-left: -20px;">
+          <i class="fa-brands fa-x-twitter"></i>
+        <a href="#" class="icon1" title="User Profile" style="margin-left: 30px;">
+            <i class="fa-brands fa-facebook"></i></a></div>
+    <h2 class="small">Jamie Oliver</h2>
+    <h4 style="color: #a4a7a5;">Celebrity chef</h4>
+      </div></div></span>
+  
+    <button onclick="fullteam()" id="myBtn" style="width: 16em; height: 9vh;background-color: rgb(245, 143, 102);color: white;border: none; margin-left: 42%;margin-top: 90px;"><b>VIEW FULL MENU</button>
+  </div><br><br>
+
+  <div style=" text-align: center;font-size: 15px; color:rgb(86, 100, 86);margin-top: 80px;"><b>GALLERY</div>
+    <div style="text-align: center; font-size: 35px; margin-top: 20px; color: rgb(39, 39, 39);"><b>Check Our Recent<br> Projects<br></div><br><br>
+    <hr style="border-top: 2px solid rgb(90, 100, 90); width: 100px;"><br><br><br><br>
+
+
+<div style="display: flex;margin-left: 40px;">
+<div class="bx2">
+  <img class="lastimg" src="image/service-5.jpg">
+  <div class="overlay"><a href="#" class="icon2" title="User Profile">
+    <i class="fa fa-search"></i></a></div>
+</div>
+
+<div class="bx2" style="margin-left: 2px;">
+  <img class="lastimg" src="image/l3.avif">
+  <div class="overlay"><a href="#" class="icon2" title="User Profile">
+    <i class="fa fa-search"></i></a></div>
+</div>
+
+<div class="bx3" style="margin-left: 2px;">
+  <img class="lastimg1" src="image/service-3.jpg">
+  <div class="overlay"><a href="#" class="icon2" title="User Profile">
+    <i class="fa fa-search"></i></a></div>
+</div>
+
+<div class="bx2" style="margin-left: -97.8%; margin-top: 262px;">
+  <img class="lastimg" src="image/service-2.jpg">
+  <div class="overlay"><a href="#" class="icon2" title="User Profile">
+    <i class="fa fa-search"></i></a></div>
+</div>
+
+<div class="bx2" style="margin-top: 262px;margin-left: 3px;">
+  <img class="lastimg" src="image/service-1.jpg">
+  <div class="overlay"><a href="#" class="icon2" title="User Profile">
+    <i class="fa fa-search"></i></a></div>
+</div></div>
+ 
+<span id="dots"></span><span id="view">
+
+<div style="display: flex;margin-left: 40px;">
+  <div class="bx2">
+    <img class="lastimg" src="image/l1.avif">
+    <div class="overlay"><a href="#" class="icon2" title="User Profile">
+      <i class="fa fa-search"></i></a></div>
+  </div>
+  
+  <div class="bx2" style="margin-left: 2px;">
+    <img class="lastimg" src="image/service-4.jpg">
+    <div class="overlay"><a href="#" class="icon2" title="User Profile">
+      <i class="fa fa-search"></i></a></div>
+  </div>
+  
+  <div class="bx2" style="margin-left: 2px;">
+    <img class="lastimg" src="image/l2.avif">
+    <div class="overlay"><a href="#" class="icon2" title="User Profile">
+      <i class="fa fa-search"></i></a></div>
+  </div></div></span>
+
+    <button onclick="viewmenu()" id="myBtn" style="width: 16em; height: 9vh;background-color: rgb(245, 143, 102);color: white;border: none; margin-left: 42%;margin-top: 90px;"><b>VIEW FULL MENU</button>
+
+<div class="lastbox">
+
+  <div style=" text-align: center;font-size: 15px; color:rgb(86, 100, 86);padding-top: 150px;"><b>CONTACT US</div>
+    <div style="text-align: center; font-size: 38px; margin-top: 20px; color: rgb(39, 39, 39);"><b>Leave a Feedback or <br>Ask a Question<br></div><br>
+    <hr style="border-top: 2px solid rgb(90, 100, 90); width: 130px;"><br><br><br><br>
+
+    <form>
+      <input type="name" placeholder="          NAME*"style="border: none;width: 370px;height: 11vh;margin-left: 270px; margin-top: 70px;"required>
+      <input type="name" placeholder="        E-MAIL*" style="border: none;width: 370px;height: 11vh;margin-left: 660px;margin-top: -70px;"required><br><br><br>
+      <input type="name" placeholder="        MESSAGE"style="border: none;width: 760px;height: 35vh;margin-left: 270px;"required>
+            <br><br><br>
+      <input type="checkbox" id="female"name="title" style="margin-left: 500px;"required>I agree that my submitted data is being collected and stored
+        <br><br><br><br>
+      <input type="submit" value="SEND MESSAGE" id="button" style="width: 13em; height: 9vh; background-color: rgb(245,143,102);border: none;color: white;margin-left: 42%; font-size: 18px;">
+    </form>
+</div><br><br><br>
+
+<div class="logobox">
+  <div class="phone">
+   <i class="fa fa-phone" style="color:rgb(84, 105, 84);"></i>
+   <a href="tel:+91 875496172"  style="color:rgb(60, 78, 60); text-decoration:none;" >123-4567-890</a>
+  <p>info@yoursite.com</p></div>
+ <img class="logo" src="image/logo.webp" style="color:rgb(84, 105, 84);">
+
+ <div class="phone">
+  <i class="fa-solid fa-cart-shopping" style="color:rgb(84, 105, 84)"></i>
+   <a href="#" style="color:rgb(84, 105, 84); text-decoration: none;">YOUR CARD ;</a>
+  <P>0 Items $0.00</P>
+ </div></div>
+  <br>
+  <div class="fa-brands1"  style="margin-left: 600px;">
+  <i class="fa-brands fa-x-twitter fa-bounce"></i>
+  <i class="fa-brands fa-facebook-f fa-bounce" style="width: 20px;text-align: center;"></i>
+  <i class="fa-brands fa-instagram fa-bounce"></i>
+  </div><br>
+
+ <h3 style="text-align: center;color: #fa7d4c;">ThemeREX <b style="color: #a4a7a5;">2024 All Rights Reserved</b></h3>
+ </body>
+ <script>
+
+ function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+
+function fullmenu() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("full");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+
+function moremenu() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("menu");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "view full menu"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Reduce menu"; 
+    moreText.style.display = "inline";
+  }
+}
+
+function myFunction1() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("menu1");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+
+function fullteam() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("team");
+  var btnText = document.getElementById("myBtn");
+  
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+
+function viewmenu() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("view");
+  var btnText = document.getElementById("myBtn");
+  
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+
+
+// set index and transition delay
+let index = 0;
+let transitionDelay = 1500;
+
+// get div containing the slides
+let slideContainer = document.querySelector(".slideshow");
+// get the slides
+let slides = slideContainer.querySelectorAll(".slide");
+
+// set transition delay for slides
+for (let slide of slides) {
+  slide.style.transition = `all ${transitionDelay/1000}s linear`;
+}
+
+// show the first slide
+showSlide(index);
+
+// show a specific slide
+function showSlide(slideNumber) {
+  slides.forEach((slide, i) => {
+    slide.style.display = i == slideNumber ? "block" : "none";
+  });
+  // next index
+  index++;
+  // go back to 0 if at the end of slides
+  if (index >= slides.length) {
+    index = 0;
+  }
+}
+
+// transition to next slide every x seconds
+setInterval (() => showSlide(index), transitionDelay);
+
+
+</script>
+</html>
